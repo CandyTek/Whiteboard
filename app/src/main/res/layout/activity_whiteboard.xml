@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ACAAAA"
-    tools:context=".pen.page.WhiteboardActivity">
+    tools:context=".activities.WhiteboardActivity">
 
 
     <com.lai.whiteboard.widget.WhiteboardTextureView

@@ -3,7 +3,6 @@ package com.lai.whiteboard.pen
 import android.graphics.PointF
 import android.view.MotionEvent
 import android.view.View
-import com.lai.whiteboard.pen.page.BrushInfoConfig
 
 /**
  * @author: Lai

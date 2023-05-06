@@ -5,7 +5,6 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewConfiguration
 import com.lai.whiteboard.ShaderNative
-import com.lai.whiteboard.pen.page.BrushInfoConfig
 import com.lai.whiteboard.util.PointUtils
 import kotlin.math.pow
 

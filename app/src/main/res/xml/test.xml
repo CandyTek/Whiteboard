@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<PreferenceScreen android:title="视频展台">
+		<intent
+			android:data="10"
+			android:targetClass="com.lai.whiteboard.activities.MainActivity"
+			android:targetPackage="com.lai.whiteboard" />
+	</PreferenceScreen>
+
+	<Preference
+		android:title="------------------- 已嵌入界面" />
+	<PreferenceScreen android:title="原来的白板">
+		<intent
+			android:targetClass="com.lai.whiteboard.activities.WhiteboardActivity"
+			android:targetPackage="com.lai.whiteboard" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="原来的测试界面">
+		<intent
+			android:targetClass="com.lai.whiteboard.activities.TestTextureActivity"
+			android:targetPackage="com.lai.whiteboard" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="原来的导航界面">
+		<intent
+			android:targetClass="com.lai.whiteboard.activities.MainActivity"
+			android:targetPackage="com.lai.whiteboard" />
+	</PreferenceScreen>
+
+
+	<Preference
+		android:title="------------------- 其他" />
+
+	<Preference
+		android:key="quit_app"
+		android:title="退出软件" />
+	<Preference
+		android:key="quit_app1"
+		android:title="  " />
+	<Preference
+		android:key="quit_app2"
+		android:title="  " />
+
+</PreferenceScreen>

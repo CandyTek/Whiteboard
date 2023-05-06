@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.lai.whiteboard.R
 import com.lai.whiteboard.adapter.BrushAdapter
 import com.lai.whiteboard.pen.TexturePen
-import com.lai.whiteboard.pen.page.BrushInfoConfig
-import com.lai.whiteboard.pen.page.BrushManager
-import com.lai.whiteboard.pen.page.BrushRes
+import com.lai.whiteboard.pen.BrushInfoConfig
+import com.lai.whiteboard.pen.BrushManager
+import com.lai.whiteboard.pen.BrushRes
 
 
 /**

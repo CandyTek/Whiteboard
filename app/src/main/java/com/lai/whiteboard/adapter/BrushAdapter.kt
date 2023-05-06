@@ -1,13 +1,12 @@
 package com.lai.whiteboard.adapter
 
-import android.util.Log
 import android.widget.ImageView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.listener.OnItemClickListener
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.lai.whiteboard.R
-import com.lai.whiteboard.pen.page.BrushManager
-import com.lai.whiteboard.pen.page.BrushRes
+import com.lai.whiteboard.pen.BrushManager
+import com.lai.whiteboard.pen.BrushRes
 
 /**
  * @author  Lai

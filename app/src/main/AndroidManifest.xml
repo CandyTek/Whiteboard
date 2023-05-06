@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lai.whiteboard">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-feature
+       android:name="android.hardware.camera"
+       android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application xmlns:tool="http://schemas.android.com/tools"
         android:icon="@mipmap/ic_launcher"
@@ -15,19 +20,32 @@
         android:requestLegacyExternalStorage="true"
         tool:ignore="LockedOrientationActivity">
 
-        <activity android:name=".TestTextureActivity" />
-
-        <activity
-            android:name=".pen.page.WhiteboardActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Fullscreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity"
+           android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.TestActivity"
+           android:label="测试专用"
+           android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name=".activities.TestTextureActivity" />
+
+        <activity
+            android:name=".activities.WhiteboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Fullscreen" />
     </application>
 
 </manifest>

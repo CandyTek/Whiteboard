@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Whiteboard</string>
+    <string name="app_name">视频展台</string>
     <string name="message_hexinput">Enter a valid hex number.</string>
     <string name="preview">Preview</string>
     <string name="undo">撤销</string>

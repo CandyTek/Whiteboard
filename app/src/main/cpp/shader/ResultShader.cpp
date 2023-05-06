@@ -204,7 +204,8 @@ void ResultShader::save(const char *savePath) {
     if (!stbi_write_png(savePath, width, height, 4, buffer, 0)) {
         LOGE("11111", "ERROR: could not write image");
     }
-    delete buffer;
+    delete[] buffer;
+//    delete buffer;
 }
 
 
