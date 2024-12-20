@@ -132,7 +132,7 @@ void Looper::addMessage(LooperMessage *msg, bool flush) {
     } else {
         head = msg;
     }
-    LOGCATI("post msg %d", msg->what);
+//    LOGCATI("post msg %d", msg->what);
     sem_post(&headwriteprotect);
     sem_post(&headdataavailable);
 }
@@ -161,7 +161,7 @@ void Looper::loop() {
             delete msg;
             return;
         }
-        LOGCATI("processing msg %d", msg->what);
+//        LOGCATI("processing msg %d", msg->what);
         handleMessage(msg);
         delete msg;
     }
